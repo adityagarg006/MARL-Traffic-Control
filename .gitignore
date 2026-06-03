@@ -1,0 +1,19 @@
+# Environments
+venv/
+.env
+gym-cityflow.egg-info/
+
+# Python caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Note: Comment out the line below if you actually WANT to upload the large `.pth` weight files for others to test
+weights/
+
+# Logs and Evaluation data
+logs/
+results/
+
+# System files
+.DS_Store
