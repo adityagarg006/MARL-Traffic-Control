@@ -118,7 +118,7 @@ jupyter notebook
 
 The models were evaluated and compared across various metrics such as total arrived vehicles, active vehicles, average wait time, and average travel time. Below is a summary of the performance compared to baselines:
 
-`	ext
+```text
 ==========================================================================================
 Model                     Arrived    Active               Avg Wait (s)         Avg Travel (s)      
 ==========================================================================================
@@ -130,7 +130,7 @@ D3QN                      2561       554 (-25.7%)         10.07 (-80.5%)       1
 GAT-D3QN                  2540       575 (-22.9%)         12.88 (-75.1%)       154.76 (-16.2%)     
 PER-GAT-D3QN              2543       572 (-23.3%)         13.35 (-74.1%)       154.71 (-16.3%)     
 ==========================================================================================
-`
+```
 
 **Key Takeaways**:
 - **D3QN** performed the best overall, yielding an **80.5% reduction** in average wait times and a 17.9% reduction in average travel time over the fixed-time baseline.
