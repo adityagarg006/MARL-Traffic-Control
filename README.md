@@ -1,4 +1,4 @@
-# Traffic Control with Multi-Agent Reinforcement Learning
+# Urban Traffic Signal Optimization via Deep RL
 
 This repository contains implementations of various Multi-Agent Reinforcement Learning (MARL) algorithms to control traffic light intersections. The algorithms involve standard DQN, Double DQN (DDQN), Dueling Double DQN (D3QN), and integration with Graph Attention Networks (GAT) and Prioritized Experience Replay (PER).
 
