@@ -13,7 +13,7 @@ weights/
 
 # Logs and Evaluation data
 logs/
-results/
+# results/
 
 # System files
 .DS_Store
