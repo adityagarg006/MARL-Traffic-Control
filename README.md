@@ -112,3 +112,26 @@ To use Jupyter Notebooks, ensure you install Jupyter in your environment:
 pip install jupyter
 jupyter notebook
 ```
+
+
+## Evaluation Results
+
+The models were evaluated and compared across various metrics such as total arrived vehicles, active vehicles, average wait time, and average travel time. Below is a summary of the performance compared to baselines:
+
+`	ext
+==========================================================================================
+Model                     Arrived    Active               Avg Wait (s)         Avg Travel (s)      
+==========================================================================================
+Max Pressure              2387       728 (-2.4%)          73.65 (+42.6%)       186.19 (+0.8%)      
+Fixed Time (Baseline)     2346       746 (-0.0%)          51.64 (-0.0%)        184.78 (-0.0%)      
+Standard DQN              2541       574 (-23.1%)         12.06 (-76.6%)       153.87 (-16.7%)     
+Double DQN                2545       570 (-23.6%)         13.75 (-73.4%)       155.78 (-15.7%)     
+D3QN                      2561       554 (-25.7%)         10.07 (-80.5%)       151.75 (-17.9%)     
+GAT-D3QN                  2540       575 (-22.9%)         12.88 (-75.1%)       154.76 (-16.2%)     
+PER-GAT-D3QN              2543       572 (-23.3%)         13.35 (-74.1%)       154.71 (-16.3%)     
+==========================================================================================
+`
+
+**Key Takeaways**:
+- **D3QN** performed the best overall, yielding an **80.5% reduction** in average wait times and a 17.9% reduction in average travel time over the fixed-time baseline.
+- **Deep RL Agents** significantly outperformed the algorithmic non-RL baselines (Fixed Time and Max Pressure).
